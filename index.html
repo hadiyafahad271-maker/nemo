@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Nimrah ♡</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:Arial,sans-serif}
+.screen{display:none;width:100vw;height:100vh;overflow:hidden}.screen.active{display:flex}
+button{border:0;cursor:pointer;font:inherit}
+#opening{align-items:center;justify-content:center;background:#f7efe1;padding:20px}
+.card{width:min(430px,90vw);height:min(650px,86vh);background:#fffaf0;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 12px 35px #0002;overflow:hidden;cursor:pointer}
+.card:after{content:"";position:absolute;bottom:-80px;left:-15%;width:130%;height:180px;background:#e6b83f;border-radius:50%;z-index:0}
+.number{font-size:130px;font-weight:900;color:#321d20}.for{font-size:24px;margin-top:10px}.tap{position:absolute;bottom:30px;font-weight:bold;z-index:3}.bottle{position:absolute;bottom:45px;left:45px;font-size:70px;z-index:2}
+.maroon{background:#6e202c;color:#fff7ed;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px}.maroon h1{font-size:42px;margin:0 0 18px}.maroon p{font-size:20px;line-height:1.45}
+.btnrow,.choice{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}.btn{padding:15px 25px;border-radius:18px;font-weight:800;font-size:17px}.yes{background:#f4d9b2;color:#641d29}.no{background:#fff7ed;color:#641d29}
+#choose{background:#f7efe1;align-items:center;justify-content:center;flex-direction:column;text-align:center}#choose h1{font-size:40px;color:#641d29}.choice button{min-width:180px;padding:22px;border-radius:24px;background:#6e202c;color:white;font-weight:900;font-size:19px}
+#letter{background:#ead9bd;align-items:center;justify-content:center;padding:20px}.envelope{width:min(520px,90vw);height:330px;background:#f8efd9;position:relative;box-shadow:0 15px 35px #0003;cursor:pointer}.flap{position:absolute;inset:0 0 auto;height:58%;background:#e8d3b0;clip-path:polygon(0 0,100% 0,50% 100%);z-index:2;transition:.6s}.bow{position:absolute;top:18px;right:18px;background:#8d3040;color:white;padding:8px 13px;border-radius:15px;z-index:4;font-size:12px;font-weight:bold}.letterPaper{position:absolute;left:7%;top:10%;width:86%;height:80%;background:#fffaf0;padding:30px;line-height:1.6;opacity:0;transition:.6s;z-index:3;overflow:auto}.envelope.open .flap{transform:rotateX(180deg);transform-origin:top}.envelope.open .letterPaper{opacity:1;transform:translateY(-15px)}
+#videoScreen{background:#000;align-items:center;justify-content:center}#memoryVideo{width:100vw;height:100vh;object-fit:cover;background:#000}.errorBox{position:absolute;width:min(390px,88vw);background:#f3f3f3;color:#111;border:1px solid #888;box-shadow:0 15px 40px #0008}.errorTitle{background:#ddd;padding:9px 12px;font-weight:bold}.errorBody{padding:22px;line-height:1.5}.errorBtn{margin:0 22px 20px auto;display:block;padding:8px 24px}
+#collage{background:#d8c5a8;position:relative}.scrapTitle{position:absolute;top:15px;left:50%;transform:translateX(-50%) rotate(-2deg);font-size:27px;font-weight:900;color:#6e202c;z-index:20}
+.photo{position:absolute;background:#fffaf0;padding:9px 9px 25px;box-shadow:0 8px 18px #0003;opacity:0;animation:appear .7s forwards}.photo img{display:block;width:100%;height:100%;object-fit:cover}.photo span{position:absolute;bottom:5px;left:0;width:100%;text-align:center;font-family:cursive;font-size:13px}.photo.main{width:min(42vw,330px);height:min(48vw,390px);left:50%;top:50%;transform:translate(-50%,-50%) rotate(-2deg);z-index:10;animation-delay:.2s}
+.p1{width:170px;height:195px;left:4%;top:8%;transform:rotate(-8deg);animation-delay:1s}.p2{width:175px;height:185px;right:4%;top:8%;transform:rotate(7deg);animation-delay:1.4s}.p3{width:165px;height:190px;left:5%;bottom:6%;transform:rotate(6deg);animation-delay:1.8s}.p4{width:170px;height:180px;right:5%;bottom:7%;transform:rotate(-7deg);animation-delay:2.2s}
+.extra1{width:135px;height:155px;left:24%;top:4%;transform:rotate(5deg);animation-delay:2.6s}.extra2{width:140px;height:160px;right:23%;top:4%;transform:rotate(-5deg);animation-delay:2.9s}.extra3{width:130px;height:150px;left:23%;bottom:4%;transform:rotate(-6deg);animation-delay:3.2s}.extra4{width:135px;height:155px;right:22%;bottom:4%;transform:rotate(5deg);animation-delay:3.5s}.extra5{width:125px;height:145px;left:1%;top:43%;transform:rotate(-4deg);animation-delay:3.8s}.extra6{width:130px;height:150px;right:1%;top:43%;transform:rotate(4deg);animation-delay:4.1s}.extra7{width:120px;height:140px;left:44%;top:1%;transform:rotate(2deg);animation-delay:4.4s}
+@keyframes appear{to{opacity:1}}
+@media(max-width:600px){.number{font-size:105px}.maroon h1,#choose h1{font-size:34px}.photo.main{width:46vw;height:58vw}.p1,.p2,.p3,.p4{width:29vw;height:31vw}.extra1,.extra2,.extra3,.extra4{width:23vw;height:26vw}.extra5,.extra6,.extra7{width:20vw;height:24vw}}
+</style>
+</head>
+<body>
+<section id="opening" class="screen active"><div class="card" id="startCard"><div class="number">21</div><div class="for">for Nimrah ♡</div><div class="bottle">🍾</div><div class="tap">tap to start ♡</div></div></section>
+<section id="question" class="screen maroon"><h1>Yoo Nimrah 👀</h1><p>I got a something for you.<br>Do you wanna see it?</p><div class="btnrow"><button class="btn yes" id="yes">YESSS</button><button class="btn no" id="no">NO 😭</button></div></section>
+<section id="bett" class="screen maroon"><h1>Okk bett!!! 😭</h1></section>
+<section id="choose" class="screen"><h1>Choose which one ♡</h1><div class="choice"><button id="letterChoice">LETTER</button><button id="memoryChoice">MEMORIES</button></div></section>
+<section id="letter" class="screen"><div class="envelope" id="envelope"><div class="flap"></div><div class="bow">HAPPY BDAY</div><div class="letterPaper"><h2>Happy birthday, Nimrah ♡</h2><p>Dear Nimrah,</p><p>Happy birthday!! I hope you have the best day ever. Thank you for all the memories, laughs, and random moments. ♡</p><p>Love youuu 😭</p></div></div></section>
+<section id="videoScreen" class="screen"><video id="memoryVideo" playsinline controls preload="auto"><source src="video.mp4" type="video/mp4">Your browser cannot play this video.</video><div id="errorBox" class="errorBox" style="display:none"><div class="errorTitle">Error</div><div class="errorBody">Nimrah...<br>I promised I'd delete it.<br>But I always recover it,<br>then delete it again...<br>so it never really goes away 😭♡</div><button class="errorBtn" id="errorOk">OK</button></div></section>
+<section id="collage" class="screen"><div class="scrapTitle">Happy Birthday Nimrah ♡</div>
+<div class="photo main"><img src="photos/photo.jpeg"><span>♡</span></div>
+<div class="photo p1"><img src="photos/DHHV1818.JPG"><span>memories ♡</span></div><div class="photo p2"><img src="photos/IMG_0016.JPG"><span>us 😭</span></div><div class="photo p3"><img src="photos/IMG_0293.JPG"><span>hehe</span></div><div class="photo p4"><img src="photos/IMG_0515[1].JPG"><span>♡</span></div>
+<div class="photo extra1"><img src="photos/IMG_3872.JPG"><span>♡</span></div><div class="photo extra2"><img src="photos/IMG_4109.JPG"><span>good times</span></div><div class="photo extra3"><img src="photos/IMG_4596.JPG"><span>lol 😭</span></div><div class="photo extra4"><img src="photos/IMG_4726.JPG"><span>♡</span></div><div class="photo extra5"><img src="photos/IMG_5477.JPG"><span>another one ♡</span></div><div class="photo extra6"><img src="photos/IMG_6497.JPG"><span>memories</span></div><div class="photo extra7"><img src="photos/RSZY4739.JPG"><span>♡</span></div>
+</section>
+<script>
+const screens=document.querySelectorAll(".screen"),show=id=>{screens.forEach(s=>s.classList.remove("active"));document.getElementById(id).classList.add("active")};
+const video=document.getElementById("memoryVideo"),error=document.getElementById("errorBox");
+startCard.onclick=()=>show("question");no.onclick=()=>alert("Bruh 😭 You hate me 💀");
+yes.onclick=()=>{show("bett");setTimeout(()=>show("choose"),1000)};
+letterChoice.onclick=()=>show("letter");envelope.onclick=()=>envelope.classList.add("open");
+memoryChoice.onclick=()=>{show("videoScreen");video.currentTime=0;video.play().catch(()=>{})};
+video.onended=()=>error.style.display="block";
+errorOk.onclick=()=>{error.style.display="none";show("collage");new Audio("happy_birthday.wav").play().catch(()=>{})};
+</script>
+</body></html>
